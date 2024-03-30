@@ -10,13 +10,14 @@ namespace SinglyLinkedListTesting
         [TestMethod]
         public void addNodesToBeginningOfList()
         {
-            
+
             list.AddFirst("Jane Doe");
             list.AddFirst("John Smith");
             list.AddFirst("Joe Schmoe");
             list.AddFirst("Joe Blow");
         }
 
+        [TestMethod]
         public void addNodesToEndOfList()
         {
             list.AddLast("Bob Bobberson");
@@ -24,22 +25,26 @@ namespace SinglyLinkedListTesting
             list.AddLast("Dave Daverson");
         }
 
+        [TestMethod]
         public void removeFirstNodeFromList()
         {
             list.RemoveFirst();
         }
 
+        [TestMethod]
         public void removeLastNodeFromList()
         {
             list.RemoveLast();
         }
 
+        [TestMethod]
         public void getValueatGivenIndex()
         {
             // Should be getting Jane Doe
             list.GetValue(2);
         }
 
+        [TestMethod]
         public void determineSizeOfList()
         {
             // Should end at 5.
